@@ -14,7 +14,6 @@ A public note-sharing web app built using the **MERN Stack (MongoDB, Express.js,
 - 📂 View all uploaded notes on your profile
 
 ---
-
 ## 🛠 Tech Stack
 
 **Frontend:** React.js  
