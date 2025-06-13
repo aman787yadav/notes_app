@@ -28,7 +28,6 @@ A public note-sharing web app built using the **MERN Stack (MongoDB, Express.js,
 
 
 ---
-
 ## ⚙️ Setup Instructions
 
 ### ✅ Prerequisites
