@@ -26,7 +26,7 @@ const UploadNote = () => {
       console.log(formData);
 
       const result = await axios.post(
-        "http://localhost:6969/notes/upload",
+        `${import.meta.env.VITE_API_URL}/notes/upload`,
         formData,
         {
           headers: {

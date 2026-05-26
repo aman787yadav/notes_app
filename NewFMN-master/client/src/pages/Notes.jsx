@@ -13,7 +13,7 @@ const Notes = () => {
 
   const fetchNotes = async () => {
     try {
-      const notes = await axios.get("http://localhost:6969/notes/getFiles");
+      const notes = await axios.get(`${import.meta.env.VITE_API_URL}/notes/getFiles`);
 
       if (notes.data.data.length > 0) {
         setNotesList(notes.data.data);
@@ -35,7 +35,7 @@ const Notes = () => {
   }, []);
 
   const showPDF = (fileName) => {
-    window.open(`http://localhost:6969/files/${fileName}`, "_blank", "noreferrer");
+    window.open(`${import.meta.env.VITE_API_URL}/files/${fileName}`, "_blank", "noreferrer");
   };
 
   if (loading) {

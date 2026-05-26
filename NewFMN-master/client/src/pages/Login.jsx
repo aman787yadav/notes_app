@@ -22,7 +22,7 @@ const Login = () => {
         userPassword,
       };
 
-      const result = await axios.post("http://localhost:6969/auth/login", user);
+      const result = await axios.post(`${import.meta.env.VITE_API_URL}/auth/login`, user);
 
       if (result.data.status === "Error") {
         toast.error("Wrong credentials");
